@@ -1,0 +1,269 @@
+/* ========================================= */
+/*      TITAN ATTIRE — PREMIUM LUXE FOOTER   */
+/* ========================================= */
+
+.footer {
+  background: #1c1b1b;
+
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  color: #f7efe5;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -4px 18px rgba(230, 199, 112, 0.08);
+}
+
+/* BRAND / LOGO */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-brand img {
+  width: 70px;
+  filter: brightness(1.1);
+}
+
+.footer-brand p {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #e6c770;
+}
+
+/* NAV LINKS */
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.footer-links li {
+  cursor: pointer;
+  color: #dfd8c8;
+  transition: 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #e6c770;
+  transform: translateY(-4px);
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-links li a:hover {
+  color: #e6c770;
+}
+
+/* SOCIAL ICONS */
+.footer-social-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-icons-container {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #252525, #2e2e2e);
+  border: 1px solid rgba(230, 199, 112, 0.25);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-icons-container img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: brightness(1.15);
+  opacity: 0.9;
+  transition: 0.35s ease;
+}
+
+.footer-icons-container:hover {
+  background: linear-gradient(135deg, #2e2e2e, #393939);
+  border-color: #e6c770;
+  transform: translateY(-6px) scale(1.08);
+  box-shadow:
+    0 0 18px rgba(230, 199, 112, 0.45),
+    0 0 8px rgba(230, 199, 112, 0.4) inset;
+}
+
+.footer-icons-container:hover img {
+  filter: brightness(1.4);
+  opacity: 1;
+}
+
+.footer-icons-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(230, 199, 112, 0.25) 50%,
+    transparent 100%
+  );
+  transition: 0.45s ease;
+}
+
+.footer-icons-container:hover::after {
+  left: 100%;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  color: #d9d3c7;
+}
+
+.footer-copy hr {
+  width: 85%;
+  margin: 0 auto 20px;
+  border: none;
+  height: 2px;
+  background: #3a3a3a;
+}
+
+.footer-copy p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #c7c1b6;
+}
+/* ============================= */
+/*        RESPONSIVE FOOTER       */
+/* ============================= */
+
+/* MOBILE (0 – 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 20px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    font-size: 32px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-social-icons {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-copy hr {
+    width: 95%;
+  }
+}
+
+/* TABLET (481 – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .footer-brand p {
+    font-size: 36px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .footer-social-icons {
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+/* LAPTOP (769 – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    text-align: center;
+    padding: 60px 60px;
+    gap: 40px;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-social-icons {
+    margin-top: 20px;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}
+
+/* DESKTOP (1025px+) */
+@media (min-width: 1025px) {
+  .footer {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    text-align: center;
+    padding: 70px 80px;
+    gap: 45px;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  .footer-social-icons {
+    margin-top: 25px;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}

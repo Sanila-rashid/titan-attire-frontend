@@ -1,0 +1,390 @@
+/* =========================================
+      SHOP CATEGORY — EXACT MEN/WOMEN SPACING
+   ========================================= */
+.shop-category,
+.category-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;  
+  background: #f7f2ea;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.25);
+  text-align: center;
+}
+
+/* HEADING */
+.cat-heading,
+.shop-category h1 {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #4b4b4b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 60px 0 0;
+}
+
+/* GOLD LINE / UNDERLINE */
+.gold-line,
+.shop-category hr {
+  width: 170px;
+  height: 4px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 8px auto 40px auto;
+}
+
+/* ===============================
+      FILTER + SORT — PUMA STYLE
+/* ==========================
+   FILTER CONTROLS — BLACK & GOLD
+   ========================== */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* LEFT ALIGNED */
+  align-items: flex-start;     /* Ensure items align top/left */
+  text-align: left;            /* Force text left */
+  gap: 16px;
+  margin-bottom: 30px;
+  width: 100%;                 /* full width for left alignment */
+}
+
+/* Individual filter inputs */
+.filters-container select,
+.filters-container input {
+  padding: 10px 18px;
+  border-radius: 50px; /* pill shape */
+  border: 2px solid #d4af37; /* gold border */
+  background: #1a1a1a; /* black background for controls */
+  color: #fdfaf6; /* light text */
+  font-size: 14px;
+  min-width: 140px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left; /* input text left */
+}
+
+/* Hover & Focus */
+.filters-container select:hover,
+.filters-container input:hover,
+.filters-container select:focus,
+.filters-container input:focus {
+  border-color: #f4d77d;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+  outline: none;
+}
+
+/* Custom dropdown arrow in gold for all selects */
+.filters-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #1a1a1a;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23d4af37" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+  padding-right: 42px;
+  text-align: left; /* left text inside select */
+}
+
+/* Sort dropdown slightly larger */
+.filters-container .sort select {
+  min-width: 160px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Sizes container */
+.sizes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+  justify-content: flex-start; /* left align */
+}
+
+/* Size buttons */
+.sizes-container .size-btn {
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 2px solid #d4af37;
+  background: #1a1a1a;
+  color: #fdfaf6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sizes-container .size-btn.active,
+.sizes-container .size-btn:hover {
+  background: #d4af37;
+  color: #1a1a1a;
+  border-color: #d4af37;
+}
+
+/* INPUT (MAX PRICE) — arrows removed */
+.filters-container input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.filters-container input::-webkit-outer-spin-button,
+.filters-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome/Safari */
+  margin: 0;
+}
+/* ==========================
+   CATEGORY TITLE — MEN / WOMEN
+========================== */
+.category-title {
+  font-size: 44px;                /* Same as shop collection */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #4b4b4b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+/* GOLD LINE UNDER CATEGORY TITLE */
+.category-title + .gold-line {
+  width: 170px;
+  height: 4px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 8px auto 40px auto;
+}
+/* CATEGORY UNDERLINE FOR MEN/WOMEN COLLECTION */
+/* CATEGORY UNDERLINE FOR MEN/WOMEN COLLECTION */
+.category-divider { 
+  width: 170px;
+  height: 4px; /* ya 6px agar thoda bolder chahiye */
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 12px auto 40px auto; /* spacing top-bottom adjust */
+}
+
+
+
+
+
+/* RESPONSIVE FIXES */
+@media (max-width: 900px) {
+  .category-title {
+    font-size: 36px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .filters-container, .sizes-container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .filters-container, .sizes-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+
+/* GRID */
+.shopcategory-products {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 100%;
+  place-items: center;
+  padding: 0 20px;
+}
+
+/* ITEM CARD */
+.shopcategory-products .item {
+  background: #ffffff;
+  width: 100%;
+  max-width: 260px;
+  padding: 18px;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.10),
+    0 0 14px rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: 0.35s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.shopcategory-products .item:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: rgba(212,175,55,0.55);
+  box-shadow:
+    0 18px 35px rgba(212,175,55,0.35),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+
+/* IMAGE WRAPPER */
+.shopcategory-products .item-image-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shopcategory-products .item-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+}
+
+.shopcategory-products .front-img {
+  opacity: 1;
+}
+
+.shopcategory-products .back-img {
+  opacity: 0;
+}
+
+.shopcategory-products .item:hover .front-img {
+  opacity: 0;
+}
+
+.shopcategory-products .item:hover .back-img {
+  opacity: 1;
+}
+
+/* NAME */
+.shopcategory-products .item-name {
+  font-size: 17px;
+  margin-top: 14px;
+  color: #2d2d2d;
+  font-weight: 600;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* PRICES */
+.shopcategory-products .item-prices {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.shopcategory-products .item-price-new {
+  color: #a92222;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shopcategory-products .item-price-old {
+  color: #898989;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+/* =========================================
+      COUPLES COLLECTION — FORCE SPACING & UNDERLINE
+   ========================================= */
+.category-page.couples-page {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.category-page.couples-page .cat-heading {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.category-page.couples-page .gold-line {
+  display: block !important;
+  width: 170px;
+  height: 4px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 8px auto 40px auto !important;
+}
+
+
+/* ==========================
+      RESPONSIVE FIXES
+========================== */
+@media (max-width: 900px) {
+  .cat-heading,
+  .shop-category h1 {
+    font-size: 36px; /* Heading slightly smaller on tablets */
+  }
+
+  .filters-container,
+  .sizes-container {
+    gap: 12px; /* Reduce spacing between filter/sizes */
+  }
+
+  .shopcategory-products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Shrink cards for tablets */
+    gap: 25px;
+  }
+
+  .shopcategory-products .item {
+    max-width: 220px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .filters-container,
+  .sizes-container {
+    flex-direction: column;
+    align-items: flex-start; /* Stack filters vertically on mobile */
+    text-align: left;
+  }
+
+  .sizes-container {
+    justify-content: center; /* Center size buttons on mobile */
+  }
+
+  .shopcategory-products {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Smaller cards for mobile */
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+/* CATEGORY UNDERLINE FOR MEN/WOMEN COLLECTION */
+/* CATEGORY UNDERLINE FOR MEN/WOMEN COLLECTION */
+.category-divider {
+  width: 170px;
+  height: 6px; /* thoda mota karo underline */
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6); /* zyada glow */
+  margin: 12px auto 40px auto; /* thoda space upar se */
+  display: block;
+}

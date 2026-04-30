@@ -1,0 +1,132 @@
+/* =========================================
+   ABOUT PAGE STYLES — MOBILE-FIRST RESPONSIVE
+========================================= */
+.about-page {
+  background: #0d0c0a;
+  min-height: 100vh;
+  padding: 70px 20px; /* smaller padding for mobile */
+  color: #f5d48d;
+  box-sizing: border-box;
+}
+
+/* Title */
+.about-title {
+  text-align: center;
+  font-size: 36px; /* smaller on mobile */
+  color: #f5d48d;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+
+/* Subtitle / Paragraph */
+.about-text {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px; /* smaller on mobile */
+  line-height: 1.6;
+  color: #e7c372;
+  padding: 0 10px;
+}
+
+/* Highlight boxes container */
+.about-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual cards */
+.about-card {
+  background: #1a1917;
+  border: 1px solid #c6a450;
+  border-radius: 14px;
+  width: 100%; /* mobile: full width */
+  max-width: 300px;
+  padding: 20px;
+  color: #f5d48d;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+/* About card text */
+.about-card p,
+.about-card .card-text {
+  color: #fff8d1; /* bright cream for readability */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-card:hover {
+  background: #272522;
+  transform: translateY(-6px);
+  box-shadow: 0 0 14px rgba(245, 212, 141, 0.2);
+}
+
+.about-card h2 {
+  color: #e7c372;
+  margin-bottom: 10px;
+  font-size: 20px; /* smaller on mobile */
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+
+/* Tablets */
+@media (min-width: 600px) {
+  .about-page {
+    padding: 80px 40px;
+  }
+
+  .about-title {
+    font-size: 42px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .about-card {
+    width: 45%; /* two cards per row */
+  }
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+  .about-page {
+    padding: 90px 60px;
+  }
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+
+  .about-card {
+    width: 30%; /* three cards per row */
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1400px) {
+  .about-page {
+    padding: 100px 80px;
+  }
+
+  .about-title {
+    font-size: 54px;
+  }
+
+  .about-text {
+    font-size: 22px;
+  }
+
+  .about-card {
+    width: 25%; /* four cards per row */
+  }
+}

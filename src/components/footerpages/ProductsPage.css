@@ -1,0 +1,175 @@
+/* =========================
+   PRODUCTS PAGE BASE
+========================= */
+
+.products-container {
+  padding: 60px 5%;
+  background: #0d0d0d;
+  min-height: 100vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+.products-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f5d48d, #c6a450, #e7c372);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.products-sub {
+  text-align: center;
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 50px;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  border: 1px solid rgba(198, 164, 80, 0.35);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(198, 164, 80, 0.25);
+  border-color: rgba(198, 164, 80, 0.7);
+}
+
+/* =========================
+   IMAGE BOX (SINGLE SOURCE)
+========================= */
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  background: #1a1917;
+  border: 1px solid #c6a450;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CATEGORY PLACEHOLDERS
+========================= */
+
+.hoodie {
+  background-image: url("https://via.placeholder.com/400x400?text=Hoodies");
+}
+
+.sweatshirt {
+  background-image: url("https://via.placeholder.com/400x400?text=Sweatshirts");
+}
+
+.trousers {
+  background-image: url("https://via.placeholder.com/400x400?text=Trousers");
+}
+
+.hoodie,
+.sweatshirt,
+.trousers {
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.product-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f7d98f;
+  margin-top: 10px;
+}
+
+.product-desc {
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .product-image {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-title {
+    font-size: 36px;
+  }
+
+  .products-sub {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .product-image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-container {
+    padding: 50px 20px;
+  }
+
+  .products-title {
+    font-size: 30px;
+  }
+
+  .product-image {
+    height: 240px;
+  }
+
+  .product-name {
+    font-size: 18px;
+  }
+}

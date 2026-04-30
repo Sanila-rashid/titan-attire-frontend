@@ -1,0 +1,195 @@
+.offers-container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 90px auto;
+  padding: 70px 65px;
+  border-radius: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+  border: 2px solid rgba(255, 215, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap; /* allow wrapping if needed */
+}
+
+/* GOLD RIBBON */
+.gold-ribbon {
+  position: absolute;
+  top: 28px;
+  right: -55px;
+  transform: rotate(45deg);
+  background: linear-gradient(90deg, #f7d36a, #d9ad45);
+  color: #000;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 12px 70px;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.55);
+  white-space: nowrap;
+  z-index: 999; /* badge always on top */
+}
+
+/* SALE TAG */
+.limited-tag {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  background: rgba(255, 215, 0, 0.12);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  padding: 9px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffd86b;
+  white-space: nowrap;
+  z-index: 999; /* badge always on top */
+}
+
+/* LEFT CONTENT */
+.offers-left {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+/* MAIN HEADING */
+.offers-left h1 {
+  font-size: 54px;
+  font-weight: 900;
+  color: #f5d07c;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  letter-spacing: 0.6px;
+}
+
+/* SUB TEXT */
+.offers-left p {
+  font-size: 20px;
+  color: #d6d6d6;
+  margin-bottom: 38px;
+  font-weight: 500;
+}
+
+/* BUTTON */
+.offers-left button {
+  padding: 16px 44px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  color: #000;
+  background: linear-gradient(145deg, #f5d07c, #d9aa4f);
+  transition: 0.3s ease;
+}
+
+.offers-left button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(255, 215, 0, 0.5);
+}
+
+/* RIGHT IMAGE */
+.offers-right {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.offers-right img {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.35);
+  object-fit: contain;
+  position: relative;
+  z-index: 1; /* behind badges */
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .offers-container {
+    flex-direction: row; /* keep image on right */
+    justify-content: space-between;
+    padding: 50px 30px;
+  }
+
+  .offers-left {
+    flex: 1 1 55%;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .offers-left h1 {
+    font-size: 42px;
+  }
+
+  .offers-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .offers-left button {
+    margin: 0;
+    font-size: 16px;
+    padding: 14px 36px;
+  }
+
+  .offers-right {
+    flex: 1 1 40%;
+    margin: 0;
+  }
+
+  .offers-right img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .offers-container {
+    flex-direction: column; /* stack on very small screens */
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .offers-left {
+    flex: 1 1 100%;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .offers-left h1 {
+    font-size: 32px;
+  }
+
+  .offers-left p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .offers-left button {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .offers-right {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+
+  .offers-right img {
+    width: 90%;
+    max-width: 300px;
+  }
+}

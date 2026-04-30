@@ -1,0 +1,56 @@
+/* menwomen.css */
+
+/* MEN COLLECTION */
+.men-title {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #4b4b4b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+.men-divider {
+  width: 170px;
+  height: 4px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 8px auto 40px auto;
+  display: block;
+}
+
+/* WOMEN COLLECTION */
+.women-title {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #4b4b4b);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+.women-divider {
+  width: 170px;
+  height: 4px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37, #f4d77d);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+  margin: 8px auto 40px auto;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .men-title, .women-title {
+    font-size: 36px;
+  }
+}

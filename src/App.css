@@ -1,0 +1,172 @@
+/* ===============================
+   GLOBAL / BASE STYLES
+=================================*/
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===============================
+   IMAGES
+=================================*/
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===============================
+   SECTION HEADINGS
+=================================*/
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #4b4b4b);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 0;
+  animation: headingReveal 0.8s ease forwards;
+}
+
+.section-gold-line {
+  width: 210px;
+  height: 6px;
+  background: linear-gradient(to right, #f2d28d, #e5c677, #f2d28d);
+  margin: 20px auto 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 22px rgba(255, 215, 140, 0.55);
+  animation: softGlow 2.4s infinite alternate ease-in-out;
+}
+
+/* ===============================
+   ANIMATIONS
+=================================*/
+@keyframes headingReveal {
+  0% { opacity: 0; transform: translateY(25px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes softGlow {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 140, 0.35); }
+  100% { box-shadow: 0 0 22px rgba(255, 215, 140, 0.65); }
+}
+
+.highlight-flash {
+  animation: flashGlow 2s ease-in-out infinite;
+}
+
+@keyframes flashGlow {
+  0% { box-shadow: 0 0 0px #ffd700; }
+  50% { box-shadow: 0 0 20px #ffd700; }
+  100% { box-shadow: 0 0 0px #ffd700; }
+}
+
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+=================================*/
+
+/* Small devices (phones, portrait) */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .section-gold-line {
+    width: 150px;
+    height: 4px;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+/* Medium devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-gold-line {
+    width: 180px;
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  .App-logo {
+    height: 38vmin;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1201px) {
+  .section-heading {
+    font-size: 3.5rem;
+  }
+
+  .App-logo {
+    height: 40vmin;
+  }
+}

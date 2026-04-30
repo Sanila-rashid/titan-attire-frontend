@@ -1,0 +1,81 @@
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.auth-btn:hover {
+  background: #333;
+}
+
+/* ✅ GOOGLE BUTTON */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #444;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background: #f2f2f2;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.auth-switch a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
