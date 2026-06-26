@@ -20,23 +20,23 @@ A modern and responsive e-commerce frontend built using React. This project prov
 
 ## Installation
 
-bash
+```bash
 git clone https://github.com/Sanila-rashid/titan-attire-frontend.git
 cd titan-attire-frontend
 npm install
 npm start
-
+```
 
 ## Folder Structure
 
-
+```
 src/
 ├── components/
 ├── pages/
 ├── assets/
 ├── App.js
 └── index.js
-
+```
 
 ## Future Improvements
 
